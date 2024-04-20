@@ -1,36 +1,156 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
-html,
-body {
-  height: 100%;
-  width: 100%;
+body,
+html {
   margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
 }
-body {
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
-}
-a {
-  display: inline-block;
-  color: lightgrey;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
+  height: 100%;
+  margin: 40px;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
+.product-img {
+  flex: 1.3;
+  height: 90px;
+}
+
+.thumbnails {
+  margin-top: 6rem;
+  display: flex;
+  width: 70px;
+  height: 90px;
+  gap: 10px;
+}
+
+.product-container {
+  flex: 1.5;
+  padding: 0 20px;
+}
+
+#button {
+  margin-top: 2rem;
+  background: #3a4980;
+  width: 309px;
+  height: 59px;
+  top: 549px;
+  left: 966px;
+  border-radius: 29.5px;
   color: white;
-  transform: scale(1.03);
-  text-decoration: none;
-}
-a:active {
-  transform: scale(0.98);
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
+.btn-cart {
+  padding-right: 10px;
+}
+
+.vendor {
+  color: #7f7f7f;
+  font-size: 15px;
+  margin-bottom: -15px;
+}
+
+.price {
+  color: #3a4980;
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+.span {
+  color: rgb(238, 14, 14);
+  font-weight: 250;
+  padding-left: 1rem;
+  font-size: 20px;
+}
+
+.less-price {
+  margin-top: -19px;
+}
+
+.color {
+  margin-top: 1.95rem;
+  color: #b9bbbf;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 13.36px;
+}
+
+.size {
+  margin-top: 1.95rem;
+  color: #b9bbbf;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 13.36px;
+}
+
+#button {
+  margin-left: 2rem;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+}
+
+.counter-btn {
+  outline: none;
+  background: 5a5a5a;
+  border: none;
+  font-size: 1.2rem;
+  background: white;
+  background: #f3f3f3;
+  cursor: pointer;
+}
+
+#quantity {
+  font-size: 1rem;
+  border: none;
+  background: #f3f3f3;
+}
+
+.count {
+  background: #f3f3f3;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  border-radius: 29.5px;
+  margin-top: 2rem;
+}
+
+.para {
+  color: #a3a3a3;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+
+  margin-top: 3.5rem;
+  opacity: 0px;
+}
+.radio-options {
+  display: flex;
+  margin: 15px;
+
+  /* justify-content: space-between; */
+}
+.radio-inputs {
+  margin: 5px;
+  border-radius: 2px;
+}
+.color-button {
+  display: flex;
+}
+
+.colors {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.selected {
+  border: 2px solid black;
+}

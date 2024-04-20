@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
     <title>Coding Assesment L2 boilerplate</title>
+  </head>
 
-</head>
+  <body>
+    <body>
+      <div class="container">
+        <div class="product-img">
+          <img src="https://via.placeholder.com/150" alt="" />
+          <div class="thumbnails">
+            <img src="https://via.placeholder.com/150" alt="" /><img
+              src="https://via.placeholder.com/150"
+              alt="https://via.placeholder.com/150"
+            /><img src="https://via.placeholder.com/150" alt="" /><img
+              src="https://via.placeholder.com/150"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="product-container">
+          <p class="vendor" id="product-vendor"></p>
+          <h1 id="product-title"></h1>
 
-<body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
-    </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
-</body>
+          <p class="price" id="product-price"></p>
 
+          <p class="less-price" id="compare-at-price"></p>
+
+          <p class="color">Choose a Color:</p>
+          <div class="color-button" id="color">
+            <button class="colors" onclick="selectColor(1)">
+              <img class="color1" src="assests/color1.png" alt="" />
+            </button>
+            <button class="colors" onclick="selectColor(2)">
+              <img class="color2" src="assests/color2.png" alt="" />
+            </button>
+            <button class="colors" onclick="selectColor(3)">
+              <img class="color3" src="assests/color3.png" alt="" />
+            </button>
+            <button class="colors" onclick="selectColor(4)">
+              <img class="color4" src="assests/color4.png" alt="" />
+            </button>
+          </div>
+
+          <p class="size">Choose a Size:</p>
+          <div class="radio-options" id="size">
+            <span class="radio-inputs">
+              <input type="radio" id="small" name="size" value="small" />
+              <label for="small">Small</label><br />
+            </span>
+            <span class="radio-inputs">
+              <input type="radio" id="medium" name="size" value="medium" />
+              <label for="medium">Medium</label><br />
+            </span>
+
+            <span class="radio-inputs">
+              <input type="radio" id="large" name="size" value="large" />
+              <label for="large">Large</label><br />
+            </span>
+            <span class="radio-inputs">
+              <input
+                type="radio"
+                id="extra-large"
+                name="size"
+                value="extra-large"
+              />
+              <label for="extra-large">Extra Large</label><br />
+            </span>
+            <span class="radio-inputs">
+              <input type="radio" id="xxl" name="size" value="xxl" />
+              <label for="xxl">XXL</label><br />
+            </span>
+          </div>
+
+          <div class="counter-container">
+            <div class="count">
+              <button class="counter-btn" onclick="decrementValue()">-</button>
+              <input
+                type="text"
+                id="quantity"
+                value="1"
+                readonly
+                style="width: 40px; text-align: center"
+              />
+              <button class="counter-btn" onclick="incrementValue()">+</button>
+            </div>
+            <div>
+              <button id="button">
+                <img class="btn-cart" src="Vectoraddcart.png" alt="" />Add To
+                Cart
+              </button>
+            </div>
+          </div>
+
+          <p class="para" id="para"></p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </body>
 </html>
